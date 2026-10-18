@@ -1,0 +1,221 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+#bus-info-list {
+  font-family: 'Fira Sans Condensed', Helvetica, sans-serif;
+  >#busroutevisual {
+    width: 10%;
+    border: 5px solid red;
+    border-radius: min(5vh, 5vw);
+    margin: 10px;
+  }
+  >#businfodir1, >#businfodir2 {
+    margin: 10px 0;
+    background-color: lightskyblue;
+    display: flex;
+    width: 100%;
+  }
+}
+
+table, td, tr {
+  background-color: transparent;
+}
+
+table#bus-stops-list, ul#bus-stops-list {
+  width: 100%;
+  box-sizing: border-box;
+  border-spacing: 0;
+  > tr {
+    /* &:first-child {
+      > td {
+        background: linear-gradient(red, red) 4px 100% / 10px 50% no-repeat;
+      }
+    } */
+    > td {
+      &:nth-child(1) {
+        text-align: right;
+        box-sizing: border-box;
+        background: linear-gradient(red, red) 0 0 / 10px 100% no-repeat;
+        background-position-x: right 4px;
+        &.none {
+          background: none;
+        }
+      }
+      &:nth-child(3) {
+        background: linear-gradient(red, red) 4px 0 / 10px 100% no-repeat;
+        &.none {
+          background: none;
+        }
+      }
+      &.stop {
+        transition: 0.5s;
+        position: relative;
+        > a {
+          border-radius: 1vh;
+          padding: 10px;
+          transition: 0.5s;
+          &:hover {
+            background-color: rgba(255, 192, 203, 0.5);
+          }
+        }
+        &::before {
+          display: block;
+          justify-content: center;
+          content: '';
+          padding: 5px;
+          background-color: white;
+          border: 4px solid red;
+          border-radius: 100%;
+          position: absolute;
+          top: calc(50% - 9px);
+          left: 0;
+        }
+        &:nth-child(1) {
+          &.start, &.fin {
+            background-size: 10px 50%;
+            &.start {background-position-y: 100%;}
+          }
+          > a {
+            padding-right: 20px;
+          }
+          &::before {
+            left: auto;
+            right: 0;
+          }
+        }
+        &:nth-child(3) {
+          &.start, &.fin {
+            background-size: 10px 50%;
+            &.start {background-position-y: 100%;}
+          }
+          > a {
+            padding-left: 20px;
+          }
+        }
+        &.originStop, &.destoStop {
+          padding: 10px;
+          margin: 10px;
+          box-sizing: border-box;
+          font-size: 20px;
+          text-align: center;
+          background: none;
+          &.originStop {
+            background: radial-gradient(circle at bottom, transparent 15px, red 15px, red 25px, transparent 25px);
+            > a {
+              padding-right: 10px;
+              padding-bottom: 30px;
+            }
+            &::before {
+              left: calc(50% - 9px);
+              right: calc(50% - 9px);
+              bottom: calc(15% + 6px);
+              top: calc(85% - 6px);
+            }
+          }
+          &.destoStop {
+            background: radial-gradient(circle at top, transparent 15px, red 15px, red 25px, transparent 25px);
+            > a {
+              padding-right: 10px;
+              padding-top: 30px;
+            }
+            &::before {
+              left: calc(50% - 9px);
+              right: calc(50% - 9px);
+              bottom: calc(85% + 12px);
+              top: calc(15% - 12px);
+            }
+          }
+        }
+      }
+      &.destoStop {
+        background: radial-gradient(circle at top, transparent 15px, red 15px, red 25px, transparent 25px);
+        height: 50px;
+      }
+    }
+    > td:nth-child(2) {
+      font-size: 5px;
+      color: transparent;
+    }
+    &:last-child {
+
+    }
+  }
+  > li {
+    transition: 0.5s;
+    list-style-type: none;
+    background: linear-gradient(red, red) 4px 0 / 10px 100% no-repeat;
+    position: relative;
+    &:first-child {
+      background-size: 10px 50%;
+      background-position-y: 100%;
+    }
+    &:last-child {
+      background-size: 10px 50%;
+    }
+    > a {
+      padding: 10px 10px 10px 20px;
+      transition: 0.5s;
+      border-radius: 1vh;
+      &:hover {
+        background-color: rgba(255, 192, 203, 0.5);
+      }
+    }
+    &::before {
+      display: block;
+      justify-content: center;
+      content: '';
+      padding: 5px;
+      background-color: white;
+      border: 4px solid red;
+      border-radius: 100%;
+      position: absolute;
+      top: calc(50% - 9px);
+      left: 0;
+    }
+  }
+}
+
+#left {
+  width: 50%;
+}
+
+#right {
+  border-left: 2px solid red;
+  width: 50%;
+}
+
+#mid {
+  width: 25px;
+}
+
+.opposite {
+  aspect-ratio: 1/1;
+  background-image: radial-gradient(circle at center, red 10%, transparent 10%);
+}
+
+.equal {
+  aspect-ratio: 1/1;
+  background-image: linear-gradient(transparent 46%, blue 46%, blue 54%, transparent 54%)
+}
+
+td>a.stop, li>a.stop {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  >.roadname {
+    color: green;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  >.busstopname {
+    color: red;
+    font-weight: 900;
+  }
+  >.busstopcode {
+    color: blue;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}

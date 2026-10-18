@@ -1,0 +1,37 @@
+:root {
+  --smrt-head-colour: #2e2a25;
+  --smrt-logo-colour: #ffcf43;
+  --smrt-logo-background-colour: #004750;
+  --smrt-ewl-colour: #009645;  
+  --smrt-nsl-colour: #d42e12;
+  --smrt-nel-colour: #9900aa;
+  --smrt-ccl-colour: #fa9e0d;
+  --smrt-dtl-colour: #005ec4;
+  --smrt-tel-colour: #9d5b25;
+  --smrt-jrl-colour: #0099aa;
+  --smrt-crl-colour: #97c616;
+  --smrt-rts-colour: #87cefa;
+  --smrt-lrt-colour: #748477;
+  --smrt-black: #2e2a25;
+  --smrt-yellow: #fcca17;
+  --smrt-yellow1: #ffd000;
+  --smrt-red: #d42f12;
+  --smrt-green: #009645;
+  --smrt-blue: #00589c;
+  --smrt-pink: #f89ab9;
+  --smrt-precision: #2e2a25;
+  --smrt-warning: #fcca17;
+  --smrt-prohibition: #d42f12;
+  --smrt-safecondition: #009645;
+  --smrt-accessible: #00589c;
+  --smrt-priority: #f89ab9;
+  --smrt-exit: #ffd000;
+  --sbs-main-colour: #93d500;
+  --sbs-sbst-colour: #781d7e;
+  --sbs-smrt-colour: #ea0b2a;
+  --sbs-tts-colour: #007e42;
+  --sbs-gas-colour: #ffc20e;
+  --wfs-klt-colour: #004aad;
+  --wfs-okei-colour: #fea503;
+  --dark-bg: #303030;
+}

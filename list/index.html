@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+        <title>Bus Services List</title>
+        <meta>
+        <link href="../../../static/css/main.css" rel="stylesheet"/>
+        <link href="../../../static/css/smrt.css" rel="stylesheet"/>
+        <link href="../../../static/css/sbs.css" rel="stylesheet"/>
+        <link href="../../../static/css/busroutelist.css" rel="stylesheet"/>
+    </head>
+    <body>
+      <!--
+      <section>
+          eee
+      </section>
+      -->
+      <header>
+          <div class="mrthead">
+              <p>
+                  plentk.sg/sg/buses/list
+              </p>
+              <p class="smolitalic">
+                  Rest in peace <mark class="sbst">65</mark> <mark class="tts">66</mark> <mark class="smrt">67</mark> <mark class="gas">68</mark> my beloved 2018-2026
+              </p>
+          </div>
+          
+          
+      </header>
+
+      <nav class="navigation">
+        <li>
+          <a href="../">
+            home
+          </a>
+        </li>
+        <li>
+          <a href="../about">
+            about me
+          </a>
+        </li>
+        <li>
+          <a href="../contact">
+            contact me
+          </a>
+        </li>
+    </nav>
+      <main>
+        <div id="bus-list">
+            <a class="bus-route p GAS TRUNK 1">
+                <div class="serviceTitle">
+                    <div class="serviceNo">
+                    EWL Bridging Bus
+                    </div>
+                    <div class="busOperator">
+                    GAS
+                    </div>
+                </div>
+                <div class="serviceStats">
+                    <div class="busCat TRUNK">
+                    Trunk
+                    </div>
+                    <div class="bus_start">
+                    77009 Pasir Ris Int
+                    </div>
+                    <div class="bus_dest">
+                    — 06011 Outram Pk Stn Exit 7
+                    </div>
+                </div>
+            </a>
+            <a class="bus-route p GAS TRUNK 2">
+                <div class="serviceTitle">
+                    <div class="serviceNo">
+                    EWL Bridging Bus
+                    </div>
+                    <div class="busOperator">
+                    GAS
+                    </div>
+                </div>
+                <div class="serviceStats">
+                    <div class="busCat TRUNK">
+                    Trunk
+                    </div>
+                    <div class="bus_start">
+                    06029 Outram Pk Stn Exit 1
+                    </div>
+                    <div class="bus_dest">
+                    — 77009 Pasir Ris Int
+                    </div>
+                </div>
+            </a>
+            <a class="bus-route p SBST TRUNK 1">
+                <div class="serviceTitle">
+                    <div class="serviceNo">
+                    Bus 474 (EWL Bridging Bus)
+                    </div>
+                    <div class="busOperator">
+                    SBST
+                    </div>
+                </div>
+                <div class="serviceStats">
+                    <div class="busCat TRUNK">
+                    Trunk
+                    </div>
+                    <div class="bus_start">
+                    01059 Bugis Stn Exit B
+                    </div>
+                    <div class="bus_dest">
+                    — 22571 Opp Boon Lay Stn
+                    </div>
+                </div>
+            </a>
+            <a class="bus-route p SBST TRUNK 2">
+                <div class="serviceTitle">
+                    <div class="serviceNo">
+                    Bus 474 (EWL Bridging Bus)
+                    </div>
+                    <div class="busOperator">
+                    SBST
+                    </div>
+                </div>
+                <div class="serviceStats">
+                    <div class="busCat TRUNK">
+                    Trunk
+                    </div>
+                    <div class="bus_start">
+                    22579 Boon Lay Stn
+                    </div>
+                    <div class="bus_dest">
+                    — 01113 Bugis Stn Exit A
+                    </div>
+                </div>
+            </a>
+            <a class="bus-route p TTS TRUNK 1">
+                <div class="serviceTitle">
+                    <div class="serviceNo">
+                    Bus 484 (EWL Bridging Bus)
+                    </div>
+                    <div class="busOperator">
+                    SBST
+                    </div>
+                </div>
+                <div class="serviceStats">
+                    <div class="busCat TRUNK">
+                    Trunk
+                    </div>
+                    <div class="bus_start">
+                    11369 Buona Vista Stn Exit D
+                    </div>
+                    <div class="bus_dest">
+                    — 25429 Tuas Lk Stn
+                    </div>
+                </div>
+            </a>
+            <a class="bus-route p TTS TRUNK 2">
+                <div class="serviceTitle">
+                    <div class="serviceNo">
+                    Bus 484 (EWL Bridging Bus)
+                    </div>
+                    <div class="busOperator">
+                    SBST
+                    </div>
+                </div>
+                <div class="serviceStats">
+                    <div class="busCat TRUNK">
+                    Trunk
+                    </div>
+                    <div class="bus_start">
+                    25421 Opp Tuas Lk Stn
+                    </div>
+                    <div class="bus_dest">
+                    — 11361 Buona Vista Stn Exit C
+                    </div>
+                </div>
+            </a>
+            <a class="bus-route p GAS TRUNK 1">
+                <div class="serviceTitle">
+                    <div class="serviceNo">
+                    EWL Bridging Bus
+                    </div>
+                    <div class="busOperator">
+                    GAS
+                    </div>
+                </div>
+                <div class="serviceStats">
+                    <div class="busCat TRUNK">
+                    Trunk
+                    </div>
+                    <div class="bus_start">
+                    85091 Tanah Merah Stn Exit 2
+                    </div>
+                    <div class="bus_dest bus_loop">
+                    ↺ 95109 Changi Airport Ter 3
+                    </div>
+                    <div class="bus_dest">
+                    — 85099 Tanah Merah Stn Exit 1
+                    </div>
+                </div>
+            </a>
+        </div>
+      </main>
+      <script src="../static/db/sgbusroute.json" rel="json"></script>
+      <script src="../static/db/sgbusstops.json" rel="json"></script>
+      <script src="../static/scripts/dataloader.js" rel="script"></script>
+      <script src="../static/scripts/sgbusroute.js" rel="script"></script>
+      <script src="" rel="script"></script>
+      <footer class="lrt">
+      <h1>
+          sbi
+      </h1>
+      <section>
+        <nav>
+          <li class="foot-subhead">
+              SBS Transit
+          </li>
+          <li>
+              North East Line and Downtown Line
+          </li>
+          <li>
+              Singapore One Rail
+          </li>
+          <li>
+              SBST
+          </li>
+          <li>
+              NextBus Arrival Timings
+          </li>
+        </nav>
+        <nav>
+          <li class="foot-subhead">
+              SMRT Buses
+          </li>
+          <li>
+              Articulated Buses
+          </li>
+          <li>
+              Joo Koon Collision
+          </li>
+          <li>
+              East West-North South Lines
+          </li>
+          <li>
+              Thomson-East Coast Line
+          </li>
+        </nav>
+        <nav>
+          <li class="foot-subhead">
+              Tower Transit
+          </li>
+          <li>
+              Bulim-Tengah Bus Depot
+          </li>
+          <li>
+              Green Livery
+          </li>
+          <li>
+              Tengah Bus Operator
+          </li>
+          <li>
+              333 334 335
+          </li>
+        </nav>
+        <nav>
+          <li class="foot-subhead">
+              Go Ahead Singapore
+          </li>
+          <li>
+              Yellow SG
+          </li>
+          <li>
+              Tampines Bus Package
+          </li>
+          <li>
+              AI Enhanced Bus Deployments
+          </li>
+          <li>
+              Im missing something else
+          </li>
+        </nav>
+      </section>
+    </footer>
+    </body>

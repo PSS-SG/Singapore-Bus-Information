@@ -1,0 +1,50 @@
+mark {
+  background-image: none;
+}
+
+.sbst, .SBST {
+  background-color: #781d7e;
+  color: white;
+}
+
+.smrt, .SMRT {
+  background-color: #ea0b2a;
+  color: white;
+}
+
+.tts, .TTS {
+  background-color: #007e42;
+  color: white;
+}
+
+.gas, .GAS {
+  background-color: #ffc20e;
+  color: #111111;
+}
+
+.bus-route > .serviceTitle > .busOperator {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #00000000;
+}
+
+.bus-route.SBST > .serviceTitle > .busOperator {
+  background-image: url("https://www.sbstransit.com.sg/Content/img/sbs-transit-logo.png");
+  background-color: white;
+}
+
+.bus-route.SMRT > .serviceTitle > .busOperator {
+  background-image: url("https://www.smrt.com.sg/Content/Images/logo.png");
+  background-color: white;
+}
+
+.bus-route.TTS > .serviceTitle > .busOperator {
+  background-image: url("https://cdn.prod.website-files.com/64afa66bbff01a83d3d820cb/656ee8309108927cb35cfd84_tts-2c.svg");
+  background-color: white;
+}
+
+.bus-route.GAS > .serviceTitle > .busOperator {
+  background-image: url("https://go-aheadsingapore.com/wp-content/uploads/2021/05/logo-dark.png");
+  background-color: white;
+}
