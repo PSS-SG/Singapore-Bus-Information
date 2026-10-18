@@ -45,7 +45,7 @@ function busStopRender(busStop, include = null) {
   const busStopCode = document.createElement('b');
   const busStopName = document.createElement('b');
   const busStopDist = document.createElement('p');
-  busStopHTML.setAttribute('href', `../busstop?busstopcode=${busStop.BusStopCode}`);
+  busStopHTML.setAttribute('href', `../busstop/?busstopcode=${busStop.BusStopCode}`);
   busStopHTML.setAttribute('title', `${busStop.BusStopCode} ${busStop.RoadName}`);
   busStopHTML.classList.add('stop');
   roadName.innerHTML = `${busStop.RoadName}`;
