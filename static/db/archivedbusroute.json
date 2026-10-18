@@ -1,0 +1,41 @@
+[
+  {
+    "ServiceNo": "SWA",
+    "Operator": "SBST",
+    "Direction": 1,
+    "Category": "TRUNK",
+    "OriginCode": "67481",
+    "DestinationCode": "67009",
+    "AM_Peak_Freq": "02-03",
+    "AM_Offpeak_Freq": "03-04",
+    "PM_Peak_Freq": "-",
+    "PM_Offpeak_Freq": "-",
+    "LoopDesc": ""
+  },
+  {
+    "ServiceNo": "SWB",
+    "Operator": "SBST",
+    "Direction": 1,
+    "Category": "TRUNK",
+    "OriginCode": "67009",
+    "DestinationCode": "67741",
+    "AM_Peak_Freq": "-",
+    "AM_Offpeak_Freq": "-",
+    "PM_Peak_Freq": "02-04",
+    "PM_Offpeak_Freq": "02-04",
+    "LoopDesc": ""
+  },
+  {
+    "ServiceNo": "324M",
+    "Operator": "AVGS",
+    "Direction": 1,
+    "Category": "FEEDER",
+    "OriginCode": "64009",
+    "DestinationCode": "64009",
+    "AM_Peak_Freq": "08-10",
+    "AM_Offpeak_Freq": "08-13",
+    "PM_Peak_Freq": "08-08",
+    "PM_Offpeak_Freq": "10-14",
+    "LoopDesc": "Upp Serangoon View"
+  }
+]
